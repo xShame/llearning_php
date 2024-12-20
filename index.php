@@ -1,19 +1,39 @@
 <?php
 
-    $blogs = [
-        ['title' => 'mario party', 'author' => 'mario', 'content' => 'lorem', 'likes' => 30],
-        ['title' => 'mario kart cheats', 'author' => 'toad', 'content' => 'lorem', 'likes' => 25],
-        ['title' => 'zelda hidden cheats', 'author' => 'link', 'content' => 'lorem', 'likes' => 50]
-    ];
+    // loops
 
-    // print_r($blogs[1]['author']);
-    // echo count($blogs);
+    $ninjas = ['shaun', 'ryu', 'yoshi'];
 
-    // $blogs[] = ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem', 'likes' => 100 ];
-    array_push($blogs, ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem', 'likes' => 100]);
+    // for($i = 0; $i < count($ninjas); $i++){
+    //     echo $ninjas[$i] . '<br />';
+    // }
 
-    $popped = array_pop($blogs);
-    print_r($popped);
+    // foreach($ninjas as $ninja){
+    //     echo $ninja . '<br />';
+    // }
+
+
+    $products = [
+		['name' => 'shiny star', 'price' => 20],
+		['name' => 'green shell', 'price' => 10],
+		['name' => 'red shell', 'price' => 15],
+		['name' => 'gold coin', 'price' => 5],
+		['name' => 'lightning bolt', 'price' => 40],
+		['name' => 'banana skin', 'price' => 2]
+	];
+
+    // foreach($products as $product){
+    //     echo $product['name'] . ' - ' . $product['price'];
+    //     echo '<br / >';
+    // }
+    // $i = 0;
+    // while ($i < count($products)) {
+    //     # code...
+    //     echo $products[$i]['name'];
+    //     echo '<br />';
+    //     $i++;
+    // }
+
 
 ?>
 
@@ -26,5 +46,15 @@
 </head>
 <body>
       
+    <?php foreach($products as $product): ?>
+        <div>
+            <h3>
+                <span style="font-weight: normal;">Product name: </span><?=$product['name']; ?>
+            </h3>
+            <p>
+               Price: <strong>₱<?=$product['price']; ?>.00</strong>
+            </p>
+        </div>
+    <?php endforeach; ?>
 </body>
 </html>
