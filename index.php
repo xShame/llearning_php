@@ -1,35 +1,46 @@
 <?php
 
-   //whole numnber
-    $radius = 25; 
+    // indexed arrays
 
-    //float - anything with decimal
-    $pi = 3.14;
+    $peopleOne = ['shaun', 'crystal', 'ryu'];
+    // echo $peopleOne[1];
 
+    $peopleTwo = array('ken', 'chun-li');
 
-    // basic operators - *, / , +, -, **
+    // echo $peopleTwo[1];
 
-    // echo $pi * $radius**2;
+    $ages = [20, 30, 40, 50];
+    // print_r($ages);
 
-    // order of operations ( B I D M A S)
+    $ages[1] = 25;
 
-    // echo 2 * (4 + 9 ) / 3;
+    // print_r($ages);
 
-    //increment & decrement operators
-    // echo $radius--;
-    // echo $radius;
+    $ages[] = 60;
+    // print_r($ages);
+    array_push($ages, 70);
+    // print_r($ages);
+    
+    // echo count($ages);
+    $peopleThree = array_merge($peopleOne,$peopleTwo);
+    // print_r($peopleThree);
 
-    //shorthand operators
-    $age = 20;
-    // $age += 10;
-    // $age *= 2;
+    // associative arrays (key & value pairs)
+    $ninjasOne = ['shaun' => 'black', 'mario' => 'orange', 'luigi' => 'brown'];
+    // echo $nijaOne['mario'];
+    // print_r($nijaOne);
 
-    // echo $age;
+    $ninjasTwo = array('bowser' => 'green', 'peach' => 'yellow');
+    // print_r($ninjasTwo);
+    // $ninjasTwo['toad'] = 'pink';
+    $ninjasTwo['peach'] = 'pink';
+    // print_r($ninjasTwo);
 
-    // number functions
-    // echo floor($pi); //nearest number
-    // echo ceil($pi); //move up to nearest integer
-    echo pi();
+    // echo count($nijaOne);
+
+    $ninjasThree = array_merge($ninjasOne,$ninjasTwo);
+    print_r($ninjasThree);
+   
 ?>
 
 <!DOCTYPE html>
