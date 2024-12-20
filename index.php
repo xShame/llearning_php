@@ -1,22 +1,35 @@
 <?php
-    $stringOne = 'My email is';
-    $stringTwo = 'sample@gmail.com';
 
-    // echo $stringOne . ' ' . $stringTwo;
+   //whole numnber
+    $radius = 25; 
 
-    $name = 'Mario';
-    // echo "Hey, my name is $name";
-    // echo "the ninja screemed \"whaaaa\"";
-    // echo 'the ninja screemed "whaaaa"';
+    //float - anything with decimal
+    $pi = 3.14;
 
-    // echo $name[0];
 
-    // echo strlen($name);
+    // basic operators - *, / , +, -, **
 
-    // echo strtoupper($name);
-    // echo strtolower($name);
-    echo str_replace('M','w', $name);
+    // echo $pi * $radius**2;
 
+    // order of operations ( B I D M A S)
+
+    // echo 2 * (4 + 9 ) / 3;
+
+    //increment & decrement operators
+    // echo $radius--;
+    // echo $radius;
+
+    //shorthand operators
+    $age = 20;
+    // $age += 10;
+    // $age *= 2;
+
+    // echo $age;
+
+    // number functions
+    // echo floor($pi); //nearest number
+    // echo ceil($pi); //move up to nearest integer
+    echo pi();
 ?>
 
 <!DOCTYPE html>
