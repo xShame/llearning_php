@@ -1,12 +1,21 @@
 <?php
-    //constant variable
-    define('NAME', 'Yoshi');
+    $stringOne = 'My email is';
+    $stringTwo = 'sample@gmail.com';
 
+    // echo $stringOne . ' ' . $stringTwo;
 
-    // $name = 'Yoshi';
-    $age = 19;
-    // $name = 'Toad';
-    // echo $name;
+    $name = 'Mario';
+    // echo "Hey, my name is $name";
+    // echo "the ninja screemed \"whaaaa\"";
+    // echo 'the ninja screemed "whaaaa"';
+
+    // echo $name[0];
+
+    // echo strlen($name);
+
+    // echo strtoupper($name);
+    // echo strtolower($name);
+    echo str_replace('M','w', $name);
 
 ?>
 
@@ -18,13 +27,6 @@
     <title>PHP</title>
 </head>
 <body>
-        <h1>User Profile Page</h1>
-
-        <div>
-            <?=NAME;?>
-        </div>
-        <div>
-            <?=$age;?>
-        </div>
+      
 </body>
 </html>
