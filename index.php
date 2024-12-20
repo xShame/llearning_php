@@ -1,6 +1,12 @@
 <?php
+    //constant variable
+    define('NAME', 'Yoshi');
 
-    // echo 'sample text....';
+
+    // $name = 'Yoshi';
+    $age = 19;
+    // $name = 'Toad';
+    // echo $name;
 
 ?>
 
@@ -12,8 +18,13 @@
     <title>PHP</title>
 </head>
 <body>
-        <h1>
-            <?='hello, ninjas..'; ?>
-        </h1>
+        <h1>User Profile Page</h1>
+
+        <div>
+            <?=NAME;?>
+        </div>
+        <div>
+            <?=$age;?>
+        </div>
 </body>
 </html>
