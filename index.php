@@ -1,36 +1,21 @@
 <?php
 
-    // conditional statements
+//    functions
 
-    // $price = 20;
+function sayHhello($name ='toad', $time = 'night'){
+    echo "good $time, $name";
+}
 
-    // if($price < 10){
-    //     echo 'the condition is met';
-    // } else if($price < 30 ){
-    //     echo 'elseif condition met.';
-    // } else {
-    //     echo 'condition not met.';
-    // }
+sayHhello();
 
-    $products = [
-		['name' => 'shiny star', 'price' => 20],
-		['name' => 'green shell', 'price' => 10],
-		['name' => 'red shell', 'price' => 15],
-		['name' => 'gold coin', 'price' => 5],
-		['name' => 'lightning bolt', 'price' => 40],
-		['name' => 'banana skin', 'price' => 2]
-	];
+function formatProduct($product){
+    // echo "{$product['name']} costs{$product['price']} to buy <br />";
+    return "{$product['name']} costs{$product['price']} to buy <br />";
+}
 
-    foreach($products as $product){
-      if($product['name'] === 'lightning bolt'){
-        break;
-      }
+$formatted = formatProduct(['name' => 'gold laner', 'price' => 20]);
 
-      if($product['price'] > 15){
-        continue;
-      }
-      echo $product['name'] . '<br />';
-    }
+// echo $formatted;
 
 ?>
 
