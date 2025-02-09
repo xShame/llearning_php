@@ -4,13 +4,7 @@
     // require('ninjas.php');
 
 
-    // connect to a database
-    $conn = mysqli_connect('localhost', 'adminer', 'P@$$w0rd123', 'pizza');
-
-    // check the connection
-    if(!$conn){
-        echo "Connection Error!: " . mysqli_connect_error();
-    }
+    include('config/db_connect.php');
 
     // write query for all pizzas
     $sql = 'SELECT title, ingredients, id FROM pizzas ORDER BY created_at';
