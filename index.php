@@ -29,6 +29,8 @@
 
     // print_r($pizzas);
 
+    // explode(',',$pizzas[0]['ingredients']);
+
 ?>
 
 <!DOCTYPE html>
@@ -46,9 +48,18 @@
                             <h6>
                                 <?=htmlspecialchars($pizza['title']); ?>
                             </h6>
-                            <div>
-                                <?=htmlspecialchars($pizza['ingredients']); ?>
-                            </div>
+                            <ul>
+                                <?php foreach(explode(',' ,$pizza['ingredients']) as $ing): ?>
+                                    <li>
+                                        <?=htmlspecialchars($ing);?>
+                                    </li>
+                                <?php endforeach;?>
+                            </ul>
+                            <!-- <div> -->
+                                <!-- <//?=htmlspecialchars($pizza['ingredients']); ?> -->
+                        
+
+                            <!-- </div> -->
                         </div>
                         <div class="card-action right-align">
                                 <a href="#" class="brand-text">
